@@ -1,6 +1,16 @@
 {
   "spider": "./a.jar",
     "logo": "./HnVideoEditor_2025_12_13_173723663.gif",
+    "warningText": "您正在訪問18+成人APP，若未满18歲，請離開。",
+  "lives": [
+    {
+      "name": "1",
+      "type": 0,
+      "url": "./w.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    }
+  ],
   "sites": [
     {
       "key": "乐播",
