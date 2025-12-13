@@ -1,0 +1,146 @@
+{
+  "spider": "./okpng.jar",
+  "sites": [
+    {
+      "key": "丝袜",
+      "name": "yo",
+      "type": 1,
+      "api": "https://www.siwazyw.tv/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+    
+  ],
+      "rules": [
+        {
+            "name": "通用-去片头片尾",
+            "hosts": [".*"],
+            "regex": [
+                "#EXTINF:.*?,[\\s\\S]*?片花",
+                "#EXTINF:.*?,[\\s\\S]*?预告",
+                "#EXTINF:.*?,[\\s\\S]*?广告",
+                "#EXTINF:.*?,[\\s\\S]*?赞助",
+                "#EXTINF:.*?,[\\s\\S]*?序幕",
+                "#EXTINF:.*?,[\\s\\S]*?下集",
+                "#EXTINF:.*?,[\\s\\S]*?精彩看点"
+            ]
+        },
+        {
+            "name": "非凡/量子-切片拦截",
+            "hosts": [
+            "vip.ffzy", 
+            "hd.ffzy", 
+            "vip.lz", 
+            "hd.lz", 
+            ".cdnlz"
+            ],
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXTINF:.*?\\s+.*?1171(057).*?\\.ts",
+                "#EXTINF:.*?\\s+.*?6d7b(077).*?\\.ts",
+                "17.19",
+                "17.99",
+                "14.45"
+            ]
+        },
+        {
+            "name": "暴风/通用-缓冲广告",
+            "hosts": [
+            "bfzy", 
+            "bfbfvip", 
+            "bfengbf", 
+            "jsyun", 
+            "jsapi"
+            ],
+            "regex": [
+                "#EXTINF.*?\\s+.*?adjump.*?\\.ts",
+                "#EXTINF.*?\\s+.*?ad\\.ts",
+                "#EXTINF.*?\\s+.*?preload.*?\\.ts",
+                "#EXTINF:0\\.0.*?,",
+                "#EXTINF:1\\.0.*?,",
+                "#EXTINF:2\\.0.*?,",
+                "#EXTINF:3\\.0.*?,",
+                "#EXTINF:4\\.0.*?,",
+                "#EXTINF:5\\.0.*?,",
+                "#EXTINF:6\\.0.*?,",
+                "#EXTINF:7\\.0.*?,",
+                "#EXTINF:8\\.0.*?,",
+                "#EXTINF:9\\.0.*?,"
+            ]
+        },
+        {
+            "name": "磁力/网页-文字广告",
+            "hosts": [".*"],
+            "regex": [
+                "更多", 
+                "请访问", 
+                "example", 
+                "社區", 
+                "xuu", 
+                "直播", 
+                "更新", 
+                "社区", 
+                "有趣", 
+                "英皇体育",
+                "全中文AV在线", 
+                "澳门皇冠赌场", 
+                "哥哥快来", 
+                "美女荷官", 
+                "裸聊", 
+                "新片首发", 
+                "UUE29",
+                "菠菜", 
+                "博彩", 
+                "下注", 
+                "开户", 
+                "真人", 
+                "百家乐", 
+                "捕鱼", 
+                "AG", 
+                "PG", 
+                "太阳城", 
+                "威尼斯"
+            ]
+        },
+        {
+            "name": "索尼/快看-特殊拦截",
+            "hosts": ["suonizy", "kuaikan"],
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:1\\.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXT-X-KEY:METHOD=NONE\\r*\\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXTINF.*?\\s+.*?p1ayer.*?\\.ts"
+            ]
+        }
+    ],
+    "ads": [
+        "ad.",
+        "ads.", 
+        "adv.",
+        "analytics.",
+        "track.", 
+        "stat.",
+        "log.",
+        "wan.51img1.com", 
+        "iqiyi.hbuioo.com",
+        "vip.ffzyad.com", 
+        "jsyunbf.com",
+        "googlesyndication.com",                   "doubleclick.net", 
+        "adf.ly", 
+        "popads.net",
+        "adserver.com", 
+        "adcolony.com", 
+        "mopub.com", 
+        "inmobi.com",
+        "umeng.com",
+        "tongji.baidu.com", 
+        "cnzz.com", "51.la",
+        "click",
+        "clk", 
+        "redirect", 
+        "jump"
+    ]
+
+}
