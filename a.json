@@ -1,5 +1,5 @@
 {
-  "spider": " ./a.jar",
+  "spider": "./a.jar",
   "sites": [
     {
       "key": "丝袜",
