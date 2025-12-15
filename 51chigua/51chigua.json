@@ -1,5 +1,5 @@
 {
-"spider": "https://cdn.jsdelivr.net/gh/yanghanhanyingshi/yanghanhanyingshi@main/51chigua/51chigua.jar",
+"spider": "./51chigua/51chigua.jar",
 "sites": [
      {
       "key": "Cg51",
