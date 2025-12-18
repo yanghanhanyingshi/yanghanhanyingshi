@@ -13,6 +13,45 @@
   ],
   "sites": [
     {
+      "key": "大地",
+      "name": "美娇妹",
+      "type": 0,
+      "api": "https://dadiapi.com/api.php/provide/vod/at/xml",
+      "quickSearch": 1,
+      "searchable": 1,
+      "filterable": 1,
+      "style": {
+      "type": "rect",
+      "ratio": 1.78
+      },
+      "categories": [
+        "日韩无码",
+        "强奸乱伦",
+        "欧美精品",
+        "国产精品",
+        "人妻系列",
+        "中文字幕",
+        "动漫精品",
+        "伦理影片",
+        "日韩精品",
+        "制服诱惑",
+        "自拍偷拍",
+        
+        
+        "巨乳系列",
+        "颜射系列",
+        "口交视频",
+        "自慰系列",
+        "SM重味",
+        "教师学生",
+        "大秀视频",
+        "AV明星",
+        "3P合辑",
+        "AV明星1"
+      ]
+    },    
+
+    {
       "key": "乐播",
       "name": "️美娇娘",
       "type": 1,
