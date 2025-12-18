@@ -14,7 +14,7 @@
   "sites": [
     {
       "key": "大地",
-      "name": "美娇妹",
+      "name": "娇娘",
       "type": 0,
       "api": "https://dadiapi.com/api.php/provide/vod/at/xml",
       "quickSearch": 1,
@@ -35,9 +35,7 @@
         "伦理影片",
         "日韩精品",
         "制服诱惑",
-        "自拍偷拍",
-        
-        
+        "自拍偷拍",        
         "巨乳系列",
         "颜射系列",
         "口交视频",
@@ -53,7 +51,7 @@
 
     {
       "key": "乐播",
-      "name": "️美娇娘",
+      "name": "️娇妹",
       "type": 1,
       "api": "https://lbapi9.com/api.php/provide/vod/",
       "searchable": 1,
