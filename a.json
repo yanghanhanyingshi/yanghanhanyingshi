@@ -119,6 +119,16 @@
         "人兽性交",
         "福利姬"
       ]
+    },
+        {
+      "key": "直播转点播",
+      "name": "美娇妻",
+      "type": 3,
+      "api": "http://yanghanhan.xyzvip.cn/kuyu/lib/zbzdb.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "./AVAV.json"
     }
   ]
 }
